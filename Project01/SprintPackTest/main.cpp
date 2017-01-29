@@ -1,9 +1,12 @@
 #include <iostream>
 
+#define CATCH_CONFIG_RUNNER
+#include "catch.hpp"
+
 using namespace std;
 
 int main(int argc, char *argv[])
 {
-    cout << "Hello World!" << endl;
+    int result = Catch::Session().run( argc, argv );
     return 0;
 }
